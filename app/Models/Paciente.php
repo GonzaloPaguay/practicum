@@ -10,8 +10,11 @@ class Patient extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name',
-        'age',
-        'contact',
+        'id',
+        'anteceentes_personales',
+        'antecedentes_familiares',
+        'habitos',
+        'personalidad',
+        'condicion',
     ];
 }

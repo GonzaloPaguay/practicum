@@ -5,13 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Patient extends Model
+class Estadistica extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'name',
-        'age',
-        'contact',
+        'tipo_informe',
+        'fecha_inicio',
+        'fecha_final'
     ];
+
 }
+
+
+
