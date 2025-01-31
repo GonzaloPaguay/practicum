@@ -28,4 +28,11 @@ class Paciente extends Model
     }
 
 
+     // Relación con citas médicas
+     public function citasMedicas()
+     {
+         return $this->hasMany(CitaMedica::class, 'paciente_id');
+     }
+
+
 }

@@ -23,8 +23,24 @@ class CitaMedica extends Model
 
     public function enfermedad(){
 
-        return $this->belongsTo(Enfermedad::class);
+        return $this->BelongsTo(Enfermedad::class,'enfermedad_id');
         
     }
+
+     // Relación con Medicos
+     public function medico()
+     {
+         return $this->belongsTo(Medico::class, 'doctor_id');
+     }
+
+
+    // Relación con pacientes
+    public function paciente()
+    {
+          return $this->belongsTo(Paciente::class, 'paciente_id');
+    }
+
+
+
 
 }

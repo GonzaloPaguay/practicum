@@ -15,5 +15,8 @@ class Enfermedad extends Model
         'descripcion',
     ];
 
-    
+    public function citasMedicas(){
+
+        return $this->hasmany(CitaMedica::class);
+    }
 }
